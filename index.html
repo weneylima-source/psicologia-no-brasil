@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Árvore genealógica da Psicologia no Brasil</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<button class="theme-toggle" id="themeToggle">Alternar tema</button>
+
+<header>
+  <div class="header-inst">
+    <p class="inst-name">Universidade Católica de Brasília</p>
+    <p class="inst-course">Prática Profissional em Psicologia</p>
+    <p class="inst-author">Autor: Weney Lima de Araújo</p>
+  </div>
+  <h1>Árvore genealógica da Psicologia no Brasil</h1>
+  <p>Um mapa de linhagens: das influências europeias e norte-americanas (raízes, no topo) até as correntes que se institucionalizaram no Brasil — psicologia experimental, psiquiatria/higiene mental, psicanálise, psicologia educacional, análise do comportamento e psicologia social sócio-histórica — com os marcos legais/institucionais da profissão ao final.</p>
+  <p style="font-size:0.78rem;">Construído a partir de artigos e livros de referência da historiografia da psicologia brasileira (ver Fontes, ao final). Clique em qualquer cartão para expandir a descrição.</p>
+</header>
+
+<div class="legend" id="legend"></div>
+<div class="howto">Leitura: cada linha (raia) é uma corrente/área; cada coluna é um período histórico. As linhas curvas indicam “influenciou” ou “deu origem a”, sempre de cima/esquerda (mais antigo) para baixo/direita (mais recente) — cor <strong>e</strong> tracejado identificam a corrente de destino. Os cartões tracejados no topo são referências estrangeiras (raízes externas): <strong>clique em uma delas</strong> para acender só o trajeto que nasce ali (o resto esmaece); clique de novo para apagar o destaque.</div>
+
+<div class="scroll-outer">
+  <div class="tree-frame" id="treeFrame">
+    <div class="tree-wrap" id="treeWrap">
+      <svg class="connector-svg" id="connSvg"></svg>
+
+      <div class="roots-row" id="rootsRow">
+        <div class="row-title">Raízes externas — Europa e Estados Unidos</div>
+      </div>
+
+      <div class="matrix" id="matrix">
+        <div></div>
+        <div class="era-header">Precedentes (até 1900)</div>
+        <div class="era-header">1900–1930</div>
+        <div class="era-header">1930–1950</div>
+        <div class="era-header">1950–1970</div>
+        <div class="era-header">1970–hoje</div>
+      </div>
+
+      <div class="milestones-row">
+        <div class="row-title">Institucionalização e regulamentação da profissão (linha do tempo)</div>
+        <div class="milestones-track" id="milestonesTrack"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sources" id="sources">
+  <h2>Fontes</h2>
+  <p>Bibliografia consultada para a construção desta árvore, priorizando estudos acadêmicos de referência (livros organizados por historiadores da área e artigos publicados em periódicos indexados — SciELO, PePSIC, Redalyc):</p>
+  <ol id="sourcesList"></ol>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
